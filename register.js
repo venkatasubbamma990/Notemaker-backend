@@ -3,6 +3,11 @@ let imports = require('./schema');
 let bcrypt = require('bcrypt')
 let User = imports.User
 let jwt = require('jsonwebtoken')
+const cors = require("cors")
+route.use(cors({
+    origin: "*",
+}))
+
 let bodyParser = require('body-parser');
 route=express.Router();
 route.use(express.json())

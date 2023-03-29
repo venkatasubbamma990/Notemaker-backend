@@ -6,6 +6,11 @@ route.use(express.json());
 let bodyParser = require('body-parser');
 route.use(bodyParser.urlencoded());
 route.use(bodyParser.json());
+const cors = require("cors");
+
+route.use(cors({
+    origin: "*",
+}))
 /* route.get('/data',(req,res)=>{
     res.send('hellooooooooooooooo')
 }) */

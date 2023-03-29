@@ -4,12 +4,12 @@ let User = imports.User
 const bcrypt = require('bcrypt');
 route=express.Router();
 route.use(express.json())
-/* const cors = require("cors")
+const cors = require("cors")
 route.use(cors({
     origin: "*",
-})) */
-
-// const secret="ghg"
+})) 
+ 
+// cost secret="ghg"
 require("dotenv").config();
 
 const mongoose = require('mongoose');
